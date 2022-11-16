@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'trips.apps.TripsConfig',
+    'picture.apps.PictureConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
