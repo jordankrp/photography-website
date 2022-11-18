@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import Story
 
-# Create your views here.
+def allstories(request):
+    stories = Story.objects
+    return render(request, 'stories/allstories.html', {'stories':stories})
