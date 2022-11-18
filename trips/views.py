@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Trip
 
 def home(request):
-    return render(request, 'trips/home.html')
+    trips = Trip.objects
+    return render(request, 'trips/home.html', {'trips':trips})
