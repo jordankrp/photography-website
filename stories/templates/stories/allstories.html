@@ -115,7 +115,7 @@
             {% for story in stories.all %}
                 <h3>{{ story.title }}</h3>
                 <br />   
-                <img class="img-fluid" src= "{{ story.story_image.url }}" width="260" height="215"></img>
+                <img class="img-fluid" src= "{{ story.story_image.url }}"></img>
                 <br />  
                 <p>{{ story.body }}</p>
             {% endfor %}
