@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', trips.views.home, name='home'),
     path('stories/', include('stories.urls')),
+    path('about/', trips.views.about, name='about'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
