@@ -76,6 +76,12 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      .splash-text {
+        text-align: center;
+        padding: 0 30px;
+        box-sizing: border-box;
+      }
     </style>
 
     
@@ -92,6 +98,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="{% url 'allstories' %}">Stories</a>
+              <a class="nav-link" href="https://www.instagram.com/jordan.krp/">Instagram</a>
               <a class="nav-link active" href="{% url 'about' %}">About</a>
             </div>
           </div>
@@ -101,7 +108,7 @@
 
 <main>
     <div class="container">
-        <h2 class="fw-light">About</h2>
+        <h2 class="fw-light splash-text">About</h2>
         <p>
         Born and raised in Athens, Greece and currently living in Amsterdam, Netherlands.
         I find comfort in nature and joy in culture, history and people. Through my hobbyist
