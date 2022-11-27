@@ -75,6 +75,20 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+
+      /* Three image containers (use 25% for four, and 50% for two, etc) */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
     </style>
 
     
@@ -106,6 +120,43 @@
         <img class="img-fluid" src= "{{ trip.cover_image.url }}"></img>
         <br />  
         <p>{{ trip.summary }}</p>
+
+        <div class="row">
+          <div class="column">
+            <img src="{{ trip.photo1.url }}" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{{ trip.photo2.url }}" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{{ trip.photo3.url }}" style="width:100%">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img src="{{ trip.photo4.url }}" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{{ trip.photo5.url }}" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{{ trip.photo6.url }}" style="width:100%">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img src="{{ trip.photo7.url }}" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{{ trip.photo8.url }}" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="{{ trip.photo9.url }}" style="width:100%">
+          </div>
+        </div>
+
     </div>
 </main>
 
