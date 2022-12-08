@@ -11,18 +11,17 @@
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
 
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link rel="stylesheet" href="{% static 'about.css' %}" type="text/css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-<!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#712cf9">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#712cf9">
 
 
     <style>
@@ -87,31 +86,21 @@
         color: white;
       }
 
-/*       .container {
-        position: relative;
-        text-align: center;
-        color: white;
-      } */
-
       .container {
-        position: absolute;
-        max-width: 100%; /* Maximum width */
-        margin: 0 auto; /* Center it */
+        position: relative;
+        text-align: left;
+        color: white;
       }
+
+/*       .container {
+        position: absolute;
+        max-width: 100%; 
+        margin: 0 auto; 
+      } */
 
       .container .content {
         position: absolute; /* Position the background text */
         top: 0; /* At the bottom. Use top:0 to append it to the top */
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-        color: #f1f1f1; /* Grey text */
-        width: 100%; /* Full width */
-        padding: 30px; /* Some padding */
-      }
-
-      .container .text-center {
-        position: absolute; /* Position the background text */
-        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
         background: rgb(0, 0, 0); /* Fallback color */
         background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
         color: #f1f1f1; /* Grey text */
@@ -146,18 +135,18 @@
 <main>
     <div class="container">
         
-        <img src="{% static 'IMG_9937.JPG' %}" style="width:100%;" />
-        <div class="content">
-        <h2 class="fw-light splash-text">About</h2>
-        <p>Born and raised in Athens, Greece and currently living in Amsterdam, Netherlands.
-        I find comfort in nature and joy in culture, history and people. Through my hobbyist
-        photographic journey I try to convey stories and impressions.
+      <img src="{% static 'IMG_8592.JPG' %}" style="width:100%;" />
+      <div class="content">
+      <h2 class="fw-light splash-text">About</h2>
+      <p>Born and raised in Athens and currently living in Amsterdam.
+      I find comfort in nature and joy in culture, history and people. Through my hobbyist
+      photographic journey I try to convey stories and impressions.
       </p>
     </div>
 </main>
 
 <footer class="text-muted">
-  <div class="container text-center">
+  <div class="text-center">
     <p>© Iordanis Karapanagiotis {% now "Y" %}</p>
   </div>
 </footer>
