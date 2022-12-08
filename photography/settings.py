@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'photography/static/'),
-    os.path.join(BASE_DIR, 'static/admin/css/')
+    #os.path.join(BASE_DIR, 'static/admin/css/')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')

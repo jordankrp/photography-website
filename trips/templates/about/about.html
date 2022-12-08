@@ -82,6 +82,43 @@
         padding: 0 30px;
         box-sizing: border-box;
       }
+      
+      .p {
+        color: white;
+      }
+
+/*       .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      } */
+
+      .container {
+        position: absolute;
+        max-width: 100%; /* Maximum width */
+        margin: 0 auto; /* Center it */
+      }
+
+      .container .content {
+        position: absolute; /* Position the background text */
+        top: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 100%; /* Full width */
+        padding: 30px; /* Some padding */
+      }
+
+      .container .text-center {
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 100%; /* Full width */
+        padding: 30px; /* Some padding */
+      }
+
     </style>
 
     
@@ -108,13 +145,14 @@
 
 <main>
     <div class="container">
+        
+        <img src="{% static 'IMG_9937.JPG' %}" style="width:100%;" />
+        <div class="content">
         <h2 class="fw-light splash-text">About</h2>
-        <p>
-        Born and raised in Athens, Greece and currently living in Amsterdam, Netherlands.
+        <p>Born and raised in Athens, Greece and currently living in Amsterdam, Netherlands.
         I find comfort in nature and joy in culture, history and people. Through my hobbyist
         photographic journey I try to convey stories and impressions.
-        </p>
-        <img src="{% static 'IMG_9937.JPG' %}" height="600" />
+      </p>
     </div>
 </main>
 
