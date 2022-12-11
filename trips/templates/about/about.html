@@ -13,6 +13,7 @@
 
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -111,38 +112,47 @@
     </style>
 
     
-  </head>
-  <body>
-    
+</head>
+<body>
+
+
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}">Iordanis Karapanagiotis</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="{% url 'allstories' %}">Stories</a>
-              <a class="nav-link" href="https://www.instagram.com/jordan.krp/">Instagram</a>
-              <a class="nav-link active" href="{% url 'about' %}">About</a>
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">Iordanis Karapanagiotis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="{% url 'allstories' %}">Stories</a>
+          <a class="nav-link" href="https://www.instagram.com/jordan.krp/">Instagram</a>
+          <a class="nav-link" href="{% url 'about' %}">About</a>
         </div>
-    </nav>
+      </div>
+    </div>
+</nav>
 </header>
 
 <main>
+  <section id="about" class="about py-7">
     <div class="container">
-        
-      <img src="{% static 'IMG_8592.JPG' %}" style="width:100%;" />
-      <div class="content">
-      <h2 class="fw-light splash-text">About</h2>
-      <p>Born and raised in Athens and currently living in Amsterdam.
-      I find comfort in nature and joy in culture, history and people. Through my hobbyist
-      photographic journey I try to convey stories and impressions.
-      </p>
+      <div class="about-content grid">
+        <div class="about-left">
+          <img src="{% static 'IMG_8592.JPG' %}">
+        </div>
+        <div class="about-right">
+          <div class="title">
+            <h2>About Me</h2>
+          </div>
+          <p class="lead">Born and raised in Athens and currently living in Amsterdam.
+            I find comfort in nature and joy in culture, history and people. Through my hobbyist
+            photographic journey I try to convey stories and impressions.</p>
+          <p class="lead">Check out my recent work at:</p>
+        </div>
+      </div>
     </div>
+  </section>
 </main>
 
 <footer class="text-muted">
@@ -152,9 +162,11 @@
 </footer>
 
 
-    <!-- JavaScript Bundle with Popper -->
+<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+<!-- typewriting js-->
+<script src="../static/typewriting.min.js"></script>
       
-  </body>
+</body>
 </html>
