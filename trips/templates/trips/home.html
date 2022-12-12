@@ -23,32 +23,36 @@
   <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
   <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
   <meta name="theme-color" content="#712cf9">
-    
 </head>
+
 <body>
-    
-<header id="header" class="vh-100 flex">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}">Iordanis Karapanagiotis</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="{% url 'allstories' %}">Stories</a>
-              <a class="nav-link" href="https://www.instagram.com/jordan.krp/">Instagram</a>
-              <a class="nav-link" href="{% url 'about' %}">About</a>
-            </div>
-          </div>
-        </div>
-    </nav>
-    <div class="container">
-      <div class="header-content">
-        <h1>I'm a <br><span class = "typewrite" data-loop = "yes" data-speed = "100" data-delay = "2000" data-words = '["hobbyist photographer", "IoT engineer", "travel enthusiast"]'></span></h1>
-        <h3>Iordanis Karapanagiotis</h3>
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}">Iordanis Karapanagiotis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="{% url 'allstories' %}">Stories</a>
+        <a class="nav-link" href="https://www.instagram.com/jordan.krp/">Instagram</a>
+        <a class="nav-link" href="{% url 'about' %}">About</a>
       </div>
     </div>
+  </div>
+</nav>
+</header>
+
+<header id="header" class="vh-100 flex">
+  
+  <div class="container">
+    <div class="header-content">
+      <h1>I'm a <br><span class = "typewrite" data-loop = "yes" data-speed = "100" data-delay = "2000" data-words = '["hobbyist photographer", "IoT engineer", "travel enthusiast"]'></span></h1>
+      <h3>Iordanis Karapanagiotis</h3>
+    </div>
+  </div>
 </header>
 
 <main>
@@ -61,6 +65,10 @@
         <p>
           <a href="mailto:jordan.krp.93@gmail.com" class="btn btn-primary my-2">Contact me</a>
         </p>
+        <p class="lead">Check out my stories</p>
+        <a href="#stories" class="btn-down">
+          <i class="fas fa-chevron-down"></i>
+        </a>
       </div>
     </div>
   </section>

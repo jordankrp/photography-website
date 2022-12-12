@@ -24,94 +24,6 @@
   <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
   <meta name="theme-color" content="#712cf9">
 
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .splash-text {
-        text-align: center;
-        padding: 0 30px;
-        box-sizing: border-box;
-      }
-      
-      .p {
-        color: white;
-      }
-
-      .container {
-        position: relative;
-        text-align: left;
-        color: white;
-      }
-
-/*       .container {
-        position: absolute;
-        max-width: 100%; 
-        margin: 0 auto; 
-      } */
-
-      .container .content {
-        position: absolute; /* Position the background text */
-        top: 0; /* At the bottom. Use top:0 to append it to the top */
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-        color: #f1f1f1; /* Grey text */
-        width: 100%; /* Full width */
-        padding: 30px; /* Some padding */
-      }
-
-    </style>
-
-    
 </head>
 <body>
 
@@ -125,9 +37,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link active" href="{% url 'allstories' %}">Stories</a>
+          <a class="nav-link" href="{% url 'allstories' %}">Stories</a>
           <a class="nav-link" href="https://www.instagram.com/jordan.krp/">Instagram</a>
-          <a class="nav-link" href="{% url 'about' %}">About</a>
+          <a class="nav-link active" href="{% url 'about' %}">About</a>
         </div>
       </div>
     </div>
@@ -139,7 +51,7 @@
     <div class="container">
       <div class="about-content grid">
         <div class="about-left">
-          <img src="{% static 'IMG_8592.JPG' %}">
+          <img src="{% static 'IMG_9937.JPG' %}">
         </div>
         <div class="about-right">
           <div class="title">
@@ -148,7 +60,7 @@
           <p class="lead">Born and raised in Athens and currently living in Amsterdam.
             I find comfort in nature and joy in culture, history and people. Through my hobbyist
             photographic journey I try to convey stories and impressions.</p>
-          <p class="lead">Check out my recent work at:</p>
+          <p class="lead">Check out my recent work below</p>
         </div>
       </div>
     </div>
