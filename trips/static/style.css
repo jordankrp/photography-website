@@ -295,6 +295,7 @@ h1, h2, h3{
         row-gap: 0;
     }
 }
+
 @media(min-width: 576px){
     .title h2{
         font-size: 4rem;
