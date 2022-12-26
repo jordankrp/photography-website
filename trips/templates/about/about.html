@@ -74,13 +74,14 @@
           <div class="title">
             <h2>Let's get in touch</h2>
           </div>
-          <form action="mailto:jordan.krp.93@gmail.com?subject=Contact from Photography Website" method="POST" enctype="text/plain">
+          <form action="mailto:jordan.krp.93@gmail.com?subject=Photography Website Inquiry" method="POST" enctype="text/plain">
             <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" placeholder="Your name ...">
+            <input type="text" class="form-control" name="name" placeholder="Your name ..." required>
             <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="Your email ...">
+            <input type="email" class="form-control" name="email" placeholder="Your email ..." required>
             <label for="subject">Message</label>
-            <textarea id="subject" name="body" placeholder="Your message..." style="height:200px"></textarea>
+            <textarea class="form-control" name="message" placeholder="Your message..."
+            style="height:200px" required></textarea>
             <input type="submit" class="btn-submit btn" value="Submit">
           </form>
         </div>
