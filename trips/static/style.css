@@ -69,6 +69,10 @@ img{
     background-color: #4e5a6c;
 }
 
+.card:hover{
+    opacity: 0.8;
+}
+
 .vh-100{
     min-height: 100vh;
 }
