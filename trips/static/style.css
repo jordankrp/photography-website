@@ -44,7 +44,11 @@ img{
     margin: 0 auto;
     padding: 0 2rem;
 }
-
+.trip-container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
 .album-container{
     max-width: 1400px;
     margin: 0 auto;
@@ -426,9 +430,19 @@ input[type=submit]:hover {
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
 /* Clear floats after image containers */
