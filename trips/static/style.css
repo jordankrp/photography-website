@@ -73,6 +73,23 @@ img{
     opacity: 0.8;
 }
 
+.card-img-caption {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+    
+.card-img-caption .card-img-top {
+    z-index: 0;
+}
+    
+.card-img-caption .card-text {
+    text-align: center;
+    width: 100%;
+    margin: 33% 0;
+    position: absolute;
+    z-index: 1;
+  }
+
 .vh-100{
     min-height: 100vh;
 }
