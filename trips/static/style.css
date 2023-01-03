@@ -70,7 +70,8 @@ img{
 }
 
 .card:hover{
-    opacity: 0.8;
+    opacity: 0.5;
+    position: relative;
 }
 
 .card-img-caption {
@@ -88,7 +89,28 @@ img{
     margin: 33% 0;
     position: absolute;
     z-index: 1;
-  }
+}
+
+.card-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+  
+.card-img-caption:hover .card-text {
+    visibility: visible;
+    opacity: 1;
+}
 
 .vh-100{
     min-height: 100vh;
@@ -140,9 +162,17 @@ h1, h2, h3{
 }
 .header-content h3{
     color: var(--light-color);
+    font-size: 3rem;
     font-weight: 300;
     letter-spacing: 4px;
     text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+.header-content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 4px;
     margin-top: 1.5rem;
 }
 .social-links{
