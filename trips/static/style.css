@@ -94,7 +94,7 @@ img{
 .card-text {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 5rem;
     left: 0;
     right: 0;
     background: rgba(29, 106, 154, 0.72);
@@ -104,7 +104,7 @@ img{
     
   
     /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
+    transition: opacity 0.7s, visibility 0.2s;
 }
   
 .card-img-caption:hover .card-text {
