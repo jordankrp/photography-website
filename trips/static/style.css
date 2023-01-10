@@ -65,14 +65,19 @@ img{
     object-fit: cover; /* comment out for no resize effect */
 }
 
+.card-img-top:hover{
+    opacity: 0.6;
+    position: relative;
+}
+
 .card {
     background-color: #4e5a6c;
 }
 
-.card:hover{
+/* .card:hover{
     opacity: 0.5;
     position: relative;
-}
+} */
 
 .card-img-caption {
     border-top-left-radius: calc(.25rem - 1px);
