@@ -70,7 +70,7 @@ img{
 }
 
 .card:hover{
-    opacity: 0.7;
+    opacity: 0.5;
     position: relative;
 }
 
@@ -93,8 +93,8 @@ img{
 
 .card-text {
     position: absolute;
-    top: 0;
-    bottom: 5rem;
+    top: 1.8rem;
+    bottom: 0;
     left: 0;
     right: 0;
     background: rgba(29, 106, 154, 0.72);
