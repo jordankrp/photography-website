@@ -86,8 +86,9 @@
             <div class="col">
               <a href="{% url 'trip_detail' trip.id %}" class="card shadow-sm">
                 <div class="card-img-caption">
-                  <p style="font-size:2.5rem;font-family:monaco,monospace;text-transform:uppercase;" 
-                  class="card-text">{{ trip.title }}</p>
+                  <h3 style="font-weight:200;font-size:2.5rem;
+                  text-transform:uppercase;letter-spacing:3px;" 
+                  class="card-text">{{ trip.title }}</h3>
                   <img class="bd-placeholder-img card-img-top" src="{{ trip.cover_image.url }}" width="100%" height="225">
                 </div>
               </a>
