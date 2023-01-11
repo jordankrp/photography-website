@@ -65,7 +65,7 @@ img{
     object-fit: cover; /* comment out for no resize effect */
 }
 
-.card-img-top:hover{
+.card-img-top:hover {
     opacity: 0.6;
     position: relative;
 }
@@ -115,6 +115,10 @@ img{
 .card-img-caption:hover .card-text {
     visibility: visible;
     opacity: 1;
+}
+
+.card-img-caption:hover .card-img-top {
+    opacity: 0.6;
 }
 
 .vh-100{
