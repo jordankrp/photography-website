@@ -39,6 +39,7 @@
               <a class="nav-link" href="{% url 'allstories' %}">Stories</a>
               <a class="nav-link" href="https://www.instagram.com/jordan.krp/">Instagram</a>
               <a class="nav-link active" href="{% url 'about' %}">About</a>
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </div>
           </div>
         </div>
@@ -66,20 +67,6 @@
               </p>
             </div>
           </div>
-          <br><br><br>
-          <div class="title">
-            <h1>Let's get in touch</h1>
-          </div>
-          <form action="mailto:jordan.krp.93@gmail.com?subject=Photography Website Inquiry" method="POST" enctype="text/plain">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" placeholder="Your name ..." required>
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="Your email ..." required>
-            <label for="message">Message</label>
-            <textarea class="form-control" name="message" placeholder="Your message..."
-            style="height:200px" required></textarea>
-            <input type="submit" class="btn-submit btn" value="Submit">
-          </form>
         </div>
       </section>
     </main>

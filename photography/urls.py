@@ -25,4 +25,5 @@ urlpatterns = [
     #path('', trips.views.home, name='home'),
     path('stories/', include('stories.urls')),
     path('about/', trips.views.about, name='about'),
+    path('contact/', trips.views.contact, name='contact'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
