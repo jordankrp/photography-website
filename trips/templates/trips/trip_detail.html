@@ -26,7 +26,7 @@
     <meta name="theme-color" content="#712cf9">
   </head>
 
-  <body>
+  <body style="background-color:rgba(29, 29, 29);">
 
     <style>
       #trip {
@@ -64,34 +64,47 @@
     </header>
 
     <main>
-        <div class="trip-container">
-            <div class="row">
-              <div class="column">
+        <div class="trip-container"></div>
+          <div class="photo-gallery">
+            <div class="column">
+              <div class="photo">
                 <img src="{{ trip.photo1.url }}">
-
+              </div>
+              <div class="photo">
                 <img src="{{ trip.photo2.url }}">
-
+              </div>
+              <div class="photo">
                 <img src="{{ trip.photo3.url }}">
               </div>
-              <div class="column">
+              <div class="photo">
                 <img src="{{ trip.photo4.url }}">
-
-                <img src="{{ trip.photo5.url }}">
-
-                <img src="{{ trip.photo6.url }}">
               </div>
-              <div class="column">
-                <img src="{{ trip.photo7.url }}">
-
-                <img src="{{ trip.photo8.url }}">
-
-                <img src="{{ trip.photo9.url }}">
+              <div class="photo">
+                <img src="{{ trip.photo5.url }}">
               </div>
             </div>
+            <div class="column">
+              <div class="photo">
+                <img src="{{ trip.photo6.url }}">
+              </div>
+              <div class="photo">
+                <img src="{{ trip.photo7.url }}">
+              </div>
+              <div class="photo">
+                <img src="{{ trip.photo8.url }}">
+              </div>
+              <div class="photo">
+                <img src="{{ trip.photo9.url }}">
+              </div>
+              <div class="photo">
+                <img src="{{ trip.photo1.url }}">
+              </div>
+            </div>
+          </div>
         </div>
     </main>
 
-    <footer class="text-muted">
+    <footer id="footer" class="text-muted" style="background-color:rgba(29, 29, 29);">
       <div class="container text-center">
         <p>© Iordanis Karapanagiotis {% now "Y" %}</p>
       </div>
