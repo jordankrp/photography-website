@@ -265,6 +265,12 @@ h1, h2, h3{
     z-index: 1;
 }
 
+/*stories */
+#stories{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../static/IMG_6667.JPG') center/cover no-repeat;
+    color: var(--light-color);
+}
+
 /* home */
 #home{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../static/IMG_7057.JPG') center/cover no-repeat fixed;
@@ -462,7 +468,8 @@ input[type=submit]:hover {
 }
 
 .link { color: #b9b6b6; } /* CSS link color */
-.link:hover { color: #77a7f3; } /* CSS link hover */
+.link:hover { color: #909296; } /* CSS link hover */
+.story-summary { color:#7c7c7c; }
 
 .bd-placeholder-img {
     font-size: 1.125rem;
