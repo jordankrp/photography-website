@@ -9,4 +9,4 @@ class Story(models.Model):
         return self.title
 
     def summary(self):
-        return self.body[:100] + '...'
+        return self.body[:400] + '...'
