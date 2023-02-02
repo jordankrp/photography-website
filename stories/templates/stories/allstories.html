@@ -77,9 +77,8 @@
                 </div>
                 <div class="about-left">
                   <a href="{% url 'story_detail' story.id %}">
-                    <h3 class="link">{{ story.title }}</h3>
+                    <h2 class="link">{{ story.title }}</h2>
                   </a>
-                  <br>
                   <p class="story-summary">{{ story.summary }}</p>
                 </div>
               </div>
@@ -87,6 +86,7 @@
             <br>
             <hr>
             {% endfor %}
+            <a class="link h3" href="{% url 'allstories' %}">^ &nbsp; Back to top</a>
           </div>
         </div>
       </div>
