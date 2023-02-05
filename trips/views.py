@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Trip
+import random
 
 def home(request):
     trips = Trip.objects
@@ -14,3 +15,8 @@ def contact(request):
 def trip_detail(request, trip_id):
     detail_trip = get_object_or_404(Trip, pk=trip_id)
     return render(request, 'trips/trip_detail.html', {'trip': detail_trip})
+
+def get_random_page(request):
+    n = Trip.objects.count()
+    rand = random.randint(1, n)
+    return trip_detail(request, rand)
