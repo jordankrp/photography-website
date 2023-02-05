@@ -85,7 +85,6 @@
                 <img src="{{ trip.photo5.url }}">
               </div>
               <hr style="height:1px;">
-              <a class="link h3" href="{% url 'home' %}">&lt; &lt; &nbsp; Back to homepage</a>
             </div>
             <div class="column">
               <div class="photo">
@@ -104,9 +103,12 @@
                 <img src="{{ trip.photo1.url }}">
               </div>
               <hr style="height:1px;">
-              <a align="right" class="link h3" href="{% url 'home' %}">To the next trip {{ trip }} &nbsp; &gt; &gt;</a>
             </div>
           </div>
+          <a style="margin-left:5%" class="link h3" href="{% url 'home' %}">&lt; &lt; &nbsp; Back to homepage</a>
+          <a style="float:right;margin-right:5%" class="link h3" href="{% url 'home' %}"> To the next trip {{ trip }} &nbsp; &gt; &gt;</a>
+          <br>
+          <br>
         </div>
     </main>
 
