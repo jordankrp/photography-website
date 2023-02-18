@@ -27,8 +27,7 @@
     <meta name="theme-color" content="#712cf9">
   </head>
 
-  
-  <body>
+  <body style="background:rgba(33,37,41)">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -52,8 +51,9 @@
     <main>
       <section id="contact" class="about py-7">
         <div class="contact-container">
+          <br>
           <div class="title">
-            <h1>Let's get in touch</h1>
+            <h1 class="text-center">Let's get in touch</h1>
           </div>
           <form action="mailto:jordan.krp.93@gmail.com?subject=Photography Website Inquiry" method="POST" enctype="text/plain">
             <label for="name">Name</label>
@@ -61,15 +61,16 @@
             <label for="email">Email</label>
             <input type="email" class="form-control" name="email" placeholder="Your email ..." required>
             <label for="message">Message</label>
-            <textarea class="form-control" name="message" placeholder="Your message..."
+            <textarea class="form-control" name="message" placeholder="Your message ..."
             style="height:200px" required></textarea>
             <input type="submit" class="btn-submit btn" value="Submit">
           </form>
+          <br>
         </div>
       </section>
     </main>
 
-    <footer class="text-muted">
+    <footer style="background:rgba(33,37,41)" class="text-muted">
       <div class="text-center">
         <p>© Iordanis Karapanagiotis {% now "Y" %}</p>
       </div>
