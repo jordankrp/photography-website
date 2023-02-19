@@ -329,30 +329,32 @@ h1, h2, h3{
 #contact{
     background-color: #a5a5d2;
     background: rgba(33,37,41);
+    color:rgb(61, 61, 61)
 }
 .contact-container{
     max-width: 700px;
     width: 60%;
     margin: 0 auto;
     padding: 0 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .contact-container .lead{
-    padding: 0.5rem;
+    padding: 2.5rem;
 }
 .contact-container form{
     margin-top: 3rem;
-    background-color: #a5a5d2;
 }
 .contact-container form .form-control{
     display: block;
-    margin: 1.6rem 0;
+    margin: 1rem 0;
     border: 2px solid rgba(0, 0, 0, 0.3);
     padding: 1rem;
     width: 100%;
+    font-size: 13px;
+    background-color: #e4e3f1;
 }
 .contact-container form .form-control::placeholder{
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Poppins', sans-serif;
 }
 .contact-container .btn-submit{
@@ -364,9 +366,10 @@ h1, h2, h3{
     letter-spacing: 2px;
     font-size: 1.6rem;
     transition: var(--transition);
+    border: 2px solid rgba(0, 0, 0, 0.3);
 }
 .contact-container .btn-submit:hover{
-    background-color: #000;
+    background-color: #63705b;
 }
 
 /* Style all font awesome icons */
@@ -378,29 +381,6 @@ h1, h2, h3{
     text-decoration: none;
 }
   
-#insta{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/insta-pic.jpg') center/cover no-repeat fixed;
-    min-height: 65vh;
-}
-#insta .title h2{
-    color: var(--light-color);
-}
-#insta .title h2::after{
-    background-color: var(--light-color);
-}
-.insta-grid > div{
-    height: 400px;
-    overflow: hidden;
-    transition: var(--transition);
-}
-.insta-grid > div img{
-    height: 100%;
-    object-fit: cover;
-}
-.insta-grid > div:hover{
-    transform: scale(0.9);
-}
-
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=email], select, textarea {
     width: 100%; /* Full width */
@@ -410,7 +390,8 @@ input[type=text], input[type=email], select, textarea {
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color: #eae5ef;
 }
 
 /* input[type=text] {
@@ -433,18 +414,41 @@ input[type=submit] {
   
   /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #2c9a31;
 }
   
 /* Add a background color and some padding around the form */
 .contact-container {
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color: #748297;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     align-self: center;
 
+}
+
+#insta{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/insta-pic.jpg') center/cover no-repeat fixed;
+    min-height: 65vh;
+}
+#insta .title h2{
+    color: var(--light-color);
+}
+#insta .title h2::after{
+    background-color: var(--light-color);
+}
+.insta-grid > div{
+    height: 400px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.insta-grid > div img{
+    height: 100%;
+    object-fit: cover;
+}
+.insta-grid > div:hover{
+    transform: scale(0.9);
 }
 
 /* footer */
