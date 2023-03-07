@@ -59,7 +59,7 @@ img{
     margin: 2rem;
 }
 .album-container{
-    max-width: 1400px;
+    max-width: 1550px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -562,10 +562,13 @@ input[type=submit]:hover {
     vertical-align: middle;
 }
 
+.col{
+    padding: 0 10px;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 1px;
     row-gap: 18px;
 }
 
