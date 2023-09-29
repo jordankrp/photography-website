@@ -78,40 +78,22 @@
 
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-            <!-- Either this-->
-            {% for trip in trips.all %}
-            <div class="col">
-              <a href="{% url 'trip_detail' trip.id %}" class="card shadow-sm">
-                <div class="card-img-caption">
-                  <h3 style="font-weight:200;font-size:2.5rem;
-                  text-transform:uppercase;letter-spacing:3px;" 
-                  class="card-text">{{ trip.title }}</h3>
-                  <img class="bd-placeholder-img card-img-top" src="{{ trip.cover_image.url }}" width="100%" height="225">
-                </div>
-              </a>
-            </div>
-            {% endfor %}
 
-            <br><br><br>
-
-            <!-- Or this-->
-            {% for trip in trips.all %}
-            <div class="col">
-              <div class="card shadow-sm">
-                <img class="bd-placeholder-img card-img-top" src= "{{ trip.cover_image.url }}" width="100%" height="225"></img>
-                <div class="card-body">
-
-                  <!-- <p class="card-text">{{ trip.title }}</p> -->
-                  <!-- <div class="d-flex justify-content-between align-items-center"> -->
-                    <div class="btn-group">
-                      <a href="{% url 'trip_detail' trip.id %}">{{ trip.title }}</a>
-                    </div>
-                    <!-- <small class="text-muted">9 mins</small> -->
-                  <!-- </div> -->
-                </div>
+	  {% for trip in trips.all %}
+          <div class="col">
+            <a href="{% url 'trip_detail' trip.id %}" class="card shadow-sm">
+              <div class="card-img-caption">
+                <h3 style="font-weight:200;font-size:2.5rem;
+                text-transform:uppercase;letter-spacing:3px;" 
+                class="card-text">{{ trip.title }}</h3>
+                <img class="bd-placeholder-img card-img-top" src="{{ trip.cover_image.url }}" width="100%" height="225">
               </div>
-            </div>
-            {% endfor %}
+            </a>
+          </div>
+          {% endfor %}
+
+          <br><br><br>
+
           </div>
         </div>
       </div>
