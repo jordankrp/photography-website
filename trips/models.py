@@ -13,6 +13,7 @@ class Trip(models.Model):
     photo7 = models.ImageField(upload_to='trip_images/')
     photo8 = models.ImageField(upload_to='trip_images/')
     photo9 = models.ImageField(upload_to='trip_images/')
+    photo10 = models.ImageField(upload_to='trip_images/')
 
     def __str__(self):
         return self.title
